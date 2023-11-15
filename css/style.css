@@ -1,0 +1,45 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: lightblue;
+}
+
+#heart-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+#heart {
+    font-size: 40em;
+    color: red;
+    animation: heartbeat 1s infinite;
+    cursor: pointer;
+}
+
+#click-text {
+    font-size: 2em;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    user-select: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+@keyframes heartbeat {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+}
